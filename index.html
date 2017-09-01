@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Document</title>
+  <style media="screen">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .head{
+      height: 100vh;
+      background: url('./images/milky-way.jpg');
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      color: white;
+    }
+    .main{
+      vertical-align: middle;
+      padding-top: 180px;
+    }
+    .main p{
+      font-weight: bold;
+      font-size: 50px;
+    }
+    .intro p{
+      font-size: 16px;
+      color: black;
+    }
+    .useme{
+      /*background-color: #F64060;*/
+      color: white;
+      background-color: #2C3E50;
+      margin-top: 25px;
+    }
+    #image{
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .commands{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .commands p{
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+    .code{
+      background-color: white;
+      color: lightslategray;
+      padding: 4px 5px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .code2{
+      background-color: rgba(0,0,0,0.8);
+      color: lightyellow;
+      padding: 4px 5px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .footer{
+      background-color: #0f1721;
+      color: rgba(255,255,255,0.8);
+      height: 110px;
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <div class="text-center">
+              <p>MeetupBot for Slack</p>
+              <h3>A Slack bot to get to know list of meetups going on nearby your area based on your location and interest.</h3>
+              <div style="width:200px; margin: 0px auto">
+                <a href="https://slack.com/oauth/authorize?&client_id=203909835238.215742452917&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- intro -->
+  <div class="container">
+    <div class="row" style="padding-top:50px; padding-bottom:50px;">
+      <div class="col-md-6 intro">
+        <h2><b>MeetupBot</b></h2>
+        <p>I am a MeetupBot and my job is to make finding meetup events easier.</p>
+        <p>Want to know meetups happening nearby your area? Just tell me your location and interest and i'll show you the meetups list</p>
+        <p>MeetupBot gives you the list of meetup events happening nearby your area based on your location and interest with a detailed list containing Event name, Group name, Venue, Date, Status and RSVP count.</p>
+        <p>To see the list of slash commands that you can use to interact with MeetupBot hit <span class="code2">/meetupbot</span></p>
+        <p>I am currently available for Slack, you can easily add me to your Slack team by clicking the button below.</p>
+        <br/>
+        <div style="width:200px;">
+          <a href="https://slack.com/oauth/authorize?&client_id=203909835238.215742452917&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img class="img img-responsive" id='image' src="./images/MeetupBotImg.png" alt="Calls to Meetupbot"/>
+      </div>
+    </div>
+  </div>
+  <!-- how to use me -->
+  <div class="container-fluid useme">
+    <h2 class="text-center">How to use me</h2>
+    <div class="container commands">
+      <div class="row">
+        <div class="col-md-6">
+          <p>You can interact with the MeetupBot with slash commands from within Slack. To call MeetupBot type <span class="code">/meetupbot</span> and hit enter.</p>
+          <p>Let's say you want to see list of Javascript Meetups in Mumbai, just type <span class="code">/meetupbot-show Mumbai &amp; Javascript</span> This will return a list of javascript meetup events in mumbai only visible to you.</p>
+          <p>If you want to see list of meetup groups in your area based on your interest, just type <span class="code">/meetupbot-find New-York &amp; Hiking</span> This will return list of meetup groups based on your location. In this command the interest parameter is optional but it helps in filtering the result for you </p>
+        </div>
+        <div class="col-md-6">
+          <img class="img img-responsive" id='image' src="./images/MeetupBotShow.png" alt="MeetupBotShow Command" style="box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(255,255,255,0.23);" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="container-fluid footer">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <p>Start Using me now.</p>
+        <div style="width: 200px; margin: 0px auto;">
+          <a href="https://slack.com/oauth/authorize?&client_id=203909835238.215742452917&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <p style="margin-top: 10px;">Built by
+        <a href="https://premprakashsingh.github.io">Premprakash Singh</a>,
+        <a href="https://github.com/nusli">Linus Brennecke</a> &amp;
+        <a href="https://github.com/zamhaq">Zameer Haque</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
