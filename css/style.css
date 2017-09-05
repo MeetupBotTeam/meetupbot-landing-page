@@ -83,7 +83,7 @@ a:hover{
   background-color: white;
   color: black;
 }
-input[type='text'], .form textarea{
+input[type='text'],input[type='email'], .form textarea{
   border: none;
   outline: none;
   margin-bottom: 2px;
