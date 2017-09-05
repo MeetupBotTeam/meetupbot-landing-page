@@ -120,9 +120,9 @@ input[type='submit']{
   font-weight: bold;
 }
 .content{
-  border: 1px solid black;
   font-size: 16px;
-  margin-bottom: 75px;
+  margin-bottom: 95px;
+  margin-top: -20px;
 }
 .back{
   border: 1px solid white;
