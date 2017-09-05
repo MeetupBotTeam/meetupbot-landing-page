@@ -2,6 +2,15 @@
   margin: 0px;
   padding: 0px;
 }
+a{
+  text-decoration: none;;
+}
+a:hover{
+  color: inherit;
+}
+/*
+*Index page CSS
+*/
 .head{
   height: 100vh;
   background: url('../images/milky-way.jpg');
@@ -56,5 +65,70 @@
 .footer{
   background-color: #0f1721;
   color: rgba(255,255,255,0.8);
-  height: 110px;
+  height: 150px;
+}
+
+/*
+*feedback page
+*/
+.feedback{
+  background-color: #2C3E50;
+  color: white;
+  padding-bottom: 50px;
+}
+.form-div{
+  border: 1px solid #0f1721;
+  border-radius: 10px;
+  padding-bottom: 25px;
+  background-color: white;
+  color: black;
+}
+input[type='text'], .form textarea{
+  border: none;
+  outline: none;
+  margin-bottom: 2px;
+}
+textarea{
+  resize: none;
+}
+input[type='submit']{
+  font-size: 16px;
+  font-weight: bold;
+}
+.sup-email{
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #2C3E50;
+}
+.sup-email a{
+  color: inherit;
+  text-decoration: none;
+}
+/*
+*privacy page
+*/
+.privacy{
+  background-color: #2C3E50;
+  color: white;
+}
+.title{
+  font-weight: bold;
+}
+.content{
+  border: 1px solid black;
+  font-size: 16px;
+  margin-bottom: 75px;
+}
+.back{
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  background-color: #0f1721;
 }
