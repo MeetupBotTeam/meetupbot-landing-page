@@ -27,9 +27,12 @@
           <h2 class="text-center">Help &amp; Feedback </h2><span class="sup-email"><a href="mailto:thisispremsingh@gmail.com?subject=MeetupBot Support Request"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email Directly</a></span>
           <div class="row">
             <div class="col-md-10 col-md-push-1">
-              <form class="form" action="#" method="post">
+              <form class="form" method="POST" action="http://formspree.io/thisispremsingh@gmail.com">
                 <input type="text" name="Name" class="form-control input-lg" placeholder="Name"/>
-                <input type="text" name="Email" class="form-control input-lg" placeholder="Email"/>
+                <input type="text" name="_replyto" class="form-control input-lg" placeholder="Your Email"/>
+                <input type="hidden" name="_next" value="https://meetupbotteam.github.io/meetupbot-landing-page/">
+                <input type="hidden" name="_subject" value="MeetupBot - New submission!">
+                <input type="text" name="_gotcha" style="display:none">
                 <textarea name="Message" class="form-control input-lg" rows="8" cols="80" placeholder="Message"></textarea><br />
                 <input type="submit" name="Submit" class="btn input-lg btn-primary form-control" value="Send" />
               </form>
